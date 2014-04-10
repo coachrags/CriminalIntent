@@ -34,8 +34,8 @@ public class CrimeListFragment extends ListFragment
 		//get the crime from the adapter
 		Crime c = ((CrimeAdapter)getListAdapter()).getItem(position);
 		
-		//start CrimeActivity
-		Intent i = new Intent(getActivity(), CrimeActivity.class);
+		//start CrimePagerActivity
+		Intent i = new Intent(getActivity(), CrimePagerActivity.class);
 		i.putExtra(CrimeFragment.EXTRA_CRIME_ID, c.getId());
 		startActivity(i);
 	}
